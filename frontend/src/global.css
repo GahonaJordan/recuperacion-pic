@@ -1,0 +1,25 @@
+/* global.css */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-image: url('https://www.solerpalau.com/es-es/blog/wp-content/uploads/2018/12/ventilacion-taller-mecanico.jpg'); /* Cambia por tu URL de imagen */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Color negro con opacidad del 50% */
+  z-index: -1;
+}
